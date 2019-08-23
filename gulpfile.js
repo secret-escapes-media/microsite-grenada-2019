@@ -27,7 +27,7 @@ function browserSyncServe() {
     server: {
       baseDir: '_site/',
       routes: {
-        '/tourist-board': '_site/'
+        '/de/grenada-2019': '_site/'
       }
     }
   });

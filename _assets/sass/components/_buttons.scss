@@ -1,24 +1,25 @@
 .btn {
   position: relative;
   display: inline-block;
-  padding: $s1 $s4;
+  padding: $s2 $s5;
   color: $white;
   font-weight: 700;
   font-size: $s-1;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: .25em;
+  line-height: 1.33;
   border-radius: 3px;
   cursor: pointer;
   @include transition;
-  &--sm { padding: $s0 $s3; font-size: $s-2; }
-  &--lg { padding: $s2 $s6; font-size: $s-1; }
+  &--sm { padding: $s1 $s4; font-size: $s-2; }
+  &--lg { padding: $s3 $s8; font-size: $s-1; }
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
-  &--turquoise { background-color: $turquoise;
-    &:hover { background-color: $turquoise-dark; }
-  }
+  &--condor { background-color: $c-orange;
+    background-image: linear-gradient(45deg, $c-darkorange, $c-lightorange);
+    font-size: $s0; font-weight: 700;}
   &--outline {
     color: inherit;
     &:before {
@@ -38,17 +39,8 @@
   &--outline-orange {
     &:before { border-color: $orange; }
     &:hover {
-      color: $white;
       background-color: $orange;
       &:before { border-color: $orange; }
-    }
-  }
-  &--outline-turquoise {
-    &:before { border-color: $turquoise; }
-    &:hover {
-      color: $white;
-      background-color: $turquoise;
-      &:before { border-color: $turquoise; }
     }
   }
 }
